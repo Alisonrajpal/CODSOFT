@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style1.css" />
+    <title>Tribute Page-Taya Smith</title>
+  </head>
+  <body>
+    <div class="container-info">
+      <h1 class="first">Taya Gaukrodger Smith</h1>
+      <img src="taya.jpg" class="tribute-img" />
+
+      <h2>Biography of Taya Smith</h2>
+      <hr />
+      <div class="right"><img src="TAYA1.jpg" class="tribute" /></div>
+      <div class="left">
+        <p>
+          Long before TAYA became one of UNITED’s most acclaimed and impactful
+          vocalists, with over one billion streams and numerous world tours over
+          the last decade, her journey with Jesus began in the small town of
+          Lismore, Australia. Her mother led her in the sinner’s prayer at age
+          five and she attended a small community church with her family where
+          her father was an elder & worship leader.
+          <br /><br />
+          The singer grew up listening to the local radio stations, her father’s
+          record collection (Fleetwood Mac, Beatles) and classical music. Even
+          before her six years of classical piano and cello studies, TAYA would
+          spontaneously make up and sing songs around the house. She credits her
+          high school music teacher for calling her out, encouraging her talent
+          and teaching her how to harmonize.<span id="dots">....</span>
+          <br /><br />
+          <span id="more">
+            After starting to lead worship in her high school years, TAYA cried
+            out to God to use her: “I love to sing but whatever you want God.” A
+            few years later, she got her first taste of performing publicly
+            before thousands, throughout Australia and New Zealand, traveling as
+            a backing vocalist for an R&B artist. As much as she enjoyed it, she
+            couldn’t shake the strong feeling she associated with singing
+            faith-based songs. Prompted by the still, ever faithful voice of God
+            in her life, TAYA left Lismore for bustling Sydney at the age of 21
+            with only $200 dollars to her name and a very specific goal: to make
+            music her career. Not wanting to just attend a church, TAYA began
+            serving as a youth leader in her local church on Friday nights when
+            she was off from her retail job. While setting her hopes for secular
+            musical success by auditioning for the Australian version of “The
+            Voice” – which she whimsically notes, ultimately rejected her – her
+            church began offering her opportunities to share her gifts,
+            culminating in UNITED longtime producer & guitarist, Michael Guy
+            Chislett, inviting her first to sing backing vocals on a recording
+            project (which turned into UNITED’s Zion album) then singing lead on
+            the song that became the group’s record breaking worship anthem of
+            the decade, “Oceans (Where Feet May Fail).”</span
+          >
+        </p>
+
+        <button onclick="myClickbait()" id="myBtn">READ MORE!</button>
+      </div>
+    </div>
+    <script>
+      function myClickbait() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+  </body>
+</html>
