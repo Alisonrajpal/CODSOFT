@@ -1,0 +1,176 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Arial, inherit;
+
+  line-height: 1.5em;
+}
+header {
+  position: fixed;
+  width: 95.8%;
+  padding: 30px;
+}
+* section {
+  font-family: Helvetica;
+  font-size: 24px;
+  padding: 20px;
+}
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: linear-gradient(to right, orange, rgb(222, 17, 233) 54%);
+  padding: 20px;
+  color: #fff;
+}
+
+ul {
+  position: flex;
+  list-style-type: none;
+  padding: 20px;
+}
+li {
+  display: inline;
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+a {
+  color: black;
+  font-family: inherit;
+  font-size: 28px;
+  padding: 10px;
+  text-decoration: none;
+}
+
+a:hover {
+  transition: all 200ms ease;
+  text-decoration: underline;
+  color: aqua;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ebebe4c9;
+}
+.logo {
+  display: flex;
+  max-width: 100px;
+  max-height: 50%;
+}
+nav.serachbar {
+  display: flex;
+  justify-content: center;
+  align-items: space-between;
+}
+/*serach bar*/
+input[type="text"] {
+  width: 200px;
+  padding: 10px;
+}
+/*social media icons*/
+.fa {
+  color: white;
+  font-size: 24px;
+  border-right: 1px solid white;
+}
+span.icons {
+  font-size: 24px;
+  color: white;
+}
+/*button on first bar*/
+.con button {
+  width: 100px;
+  padding: 12px;
+  color: white;
+  background-color: green;
+}
+.spacer {
+  height: 110px;
+}
+/*homepage background*/
+section {
+  padding: 30px;
+}
+.homepage {
+  width: 95.8%;
+  height: 600px;
+  background-image: url("bg1.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 30px;
+}
+#home-caption {
+  font-size: 34px;
+  margin-top: 250px;
+  margin-left: 80px;
+  color: rgb(202, 34, 34);
+  animation: 10s slide-right;
+  line-height: 1.5em;
+  border-right: 2px solid aquamarine;
+}
+
+.bottom {
+  color: #fff;
+  height: 100vh;
+  background: linear-gradient(to right, orange, rgb(222, 17, 233) 54%);
+}
+.container1 {
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.dermo {
+  width: 300px;
+  padding: 20px;
+}
+.mirco {
+  width: 300px;
+  padding: 20px;
+}
+.microb {
+  width: 300px;
+  padding: 20px;
+}
+.left {
+  float: left;
+  width: 500px;
+}
+.right {
+  float: right;
+  justify-content: center;
+}
+.clear {
+  clear: both;
+}
+#beauty {
+  justify-content: space-between;
+}
+h2 {
+  text-align: center;
+}
+#about {
+  background-color: rgb(255, 244, 230);
+
+  margin: auto;
+  width: 91.8%;
+  height: 1000px;
+}
+.amy {
+  display: block;
+  margin: 150px 80px 0 0;
+  width: 500px;
+}
+.contactform {
+  width: 500px;
+  height: 600px;
+  border: 2px double black;
+  margin: auto;
+  padding: 10px;
+}
+label {
+  margin-top: 20px;
+}
