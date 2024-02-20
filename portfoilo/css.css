@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppies");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins, sans-serif;
+  cursor: pointer;
+}
+body {
+  color: grey;
+  font-size: 22px;
+}
+.mega-container {
+  padding: 60px;
+  margin: 60px;
+}
+.port {
+  color: #0ef;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+table {
+  margin-left: 20px;
+}
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: rgb(55, 144, 35);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  cursor: default;
+}
+.navbar a {
+  font-size: 20px;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 40px;
+  transition: 0.3s;
+}
+
+.navbar a:hover,
+.navbar a.active {
+  color: #0ef;
+}
+.navbar {
+  margin-top: 10px;
+  float: right;
+}
+
+#home {
+  position: relative;
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 10px 0;
+  color: white;
+}
+
+#canv {
+  margin-top: 75px;
+  margin-right: 6%;
+  float: right;
+  width: 670px;
+  height: 470px;
+}
+.home-content {
+  margin-left: 30px;
+  margin-top: 14%;
+  font-size: 15pt;
+  padding: 0;
+}
+.home-content h1:hover {
+  color: #0ef;
+  font-size: 28pt;
+}
+
+.right {
+  width: 45%;
+  height: 80%;
+  position: absolute;
+  bottom: 0;
+  right: 100px;
+}
+
+.right img {
+  height: 100%;
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+  top: 25px;
+  transform: translateX(-50%);
+  transition: bottom 1s, left 1s;
+}
+
+.right:hover #canv {
+  margin-top: 40px;
+}
+
+.right:hover .girl {
+  left: 20%;
+}
+
+button:hover {
+  color: #0ef;
+}
+
+.dropbtn {
+  font-size: 20px;
+  background-color: grey;
+  color: white;
+  margin-left: 30px;
+
+  border: none;
+  cursor: default;
+}
+/*The container <div>- needed to position the dropdown content */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/*Dropdown Content (Hidden by Default)*/
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/*links inside the dropdown*/
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+/*change color of dropdown links on hover*/
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+/*show the dropdon on hover*/
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+/*change the background-color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  background-color: transparent;
+}
+
+.footer {
+  width: 100%;
+  height: 130px;
+  background-color: white;
+  padding: 10px;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 70px;
+  text-align: center;
+  text-decoration: none;
+  margin: auto;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3b5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55acee;
+  color: white;
+}
+
+/* Instagram */
+.fa-instagram {
+  background: hotpink;
+  color: white;
+}
+
+/* youtube */
+.fa-youtube {
+  background: red;
+  color: white;
+}
+/*whatsapp*/
+.fa-whatsapp {
+  background: green;
+  color: white;
+}
+
+.intro dt {
+  color: Hotpink;
+  font-size: 20px;
+  text-decoration: underline;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.form {
+  position: absolute;
+  inset: 2px;
+  border-radius: 8px;
+  background: #28292d;
+  z-index: 10;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form h2 {
+  color: #45f3ff;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.inputBox {
+  position: relative;
+  width: 300px;
+  margin-top: 35px;
+}
+
+.inputBox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 0px 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  z-index: 10;
+}
+
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 20px;
+  font-size: 1em;
+  color: #8f8f8f;
+  pointer-events: none;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: #45f3ff;
+  transform: translateY(-10px) translateY(-34px);
+  font-size: 0.75em;
+}
+.inputBox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #45f3ff;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ icon {
+  height: 44px;
+}
+.box {
+  margin: auto;
+  position: relative;
+  width: 380px;
+  height: 650px;
+  opacity: 0.8;
+  background: transparent;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.box:before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 380px;
+  height: 450px;
+  background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+  animation: animate 6s linear infinite;
+  transform-origin: bottom right;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: -50px;
+  left: -50px;
+  width: 380px;
+  height: 450px;
+  background: linear-gradient(0deg, transparent, #45f3ff, #45f3ff);
+  animation: animate 6s linear infinite;
+  transform-origin: bottom right;
+  animation-delay: -3s;
+}
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.rgt {
+  float: right;
+}
+.lft {
+  float: left;
+}
+/*About page section*/
+
+section {
+  background-image: url("tech.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  padding: 40px;
+}
+.about1 {
+  color: #fff;
+
+  opacity: 0.9;
+  padding: 20px;
+}
+
+.footer {
+  background-color: rgb(55, 144, 35);
+}
+.contact {
+  background-color: black;
+  opacity: 0.5;
+  width: 700px;
+  height: 120px;
+  padding: 10px;
+  border-color: navy;
+  border: 4px;
+  color: white;
+  margin-left: 540px;
+  text-align: center;
+}
+.icon {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+  font-size: 16pt;
+  color: #0ef;
+  border-radius: 50%;
+}
+
+.about {
+  padding: 50px;
+  margin: 130px;
+}
+.rgt {
+  float: right;
+  width: 600px;
+}
+.lft {
+  float: left;
+  margin-right: 120px;
+}
+
+#me {
+  padding: 30px;
+  margin-bottom: 400px;
+  background-color: black;
+}
+
+.clear {
+  clear: both;
+}
+
+.contact {
+  margin: auto;
+  width: 400px;
+  height: 230pt;
+}
+input[type="submit"][name="submit"] {
+  color: #fff;
+  background-color: #0ef;
+  height: 25pt;
+  padding: 10px;
+  border-radius: 4px;
+}
+.star {
+  color: red;
+}
+
+iframe {
+  margin-left: 420px;
+}
+footer {
+  color: #fff;
+  text-align: center;
+  background-color: rgb(55, 144, 35);
+}
+
+.heading {
+  text-align: center;
+  color: rgb(55, 144, 35);
+  padding: 20px;
+  font-size: 37px;
+}
+.skills-1 {
+  display: flex;
+  justify-content: center;
+  position: flex-end;
+}
+
+.skills-list li {
+  list-style-type: none;
+}
+
+table {
+  padding: 10px;
+}
+.project-container {
+  padding: 10px;
+}
+.project img {
+  width: 400px;
+  padding: 10px;
+}
+.project {
+  padding: 10px;
+}
+.resume-button {
+  width: 100px;
+  margin: 0 auto;
+  text-decoration: none;
+  color: white;
+  background: rgb(55, 144, 35);
+  padding: 5px;
+}
+
+button {
+  text-shadow: 3px 3px 3px white;
+}
